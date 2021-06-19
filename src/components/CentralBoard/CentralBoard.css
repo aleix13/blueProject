@@ -1,0 +1,37 @@
+.central-board {
+    height: inherit;
+    background: #F8F5F1;
+    display: grid;
+}
+
+.cells{
+    display: inline-grid;
+    height: min-content;
+    grid-template-columns:repeat(21, 1fr);
+    border-top: 1px solid #266BA8;
+    border-left: 1px solid #266BA8;
+}
+
+.cell {
+    aspect-ratio: 0.75;
+    border-bottom: 1px solid #266BA8;
+    border-right: 1px solid #266BA8;
+    background: white;
+    text-align: center;
+}
+
+.vertical {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(19, 1fr);
+}
+
+.right {
+    align-self: end;
+}
+.center{
+    display: inline-grid;
+    height: auto;
+    grid-template-columns: 1fr 18fr 1fr;
+}

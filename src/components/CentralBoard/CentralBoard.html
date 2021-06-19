@@ -1,0 +1,31 @@
+
+<div class="central-board">
+  <div class="cells">
+    <div v-for="index in 21" :key="index" class="cell">
+      {{index}}
+    </div>
+  </div>
+
+  <div class="center">
+    <div class="cells vertical">
+      <div v-for="index in 19" :key="index" class="cell vertical">
+        {{80 - index}}
+      </div>
+    </div>
+    <div class="board">
+
+    </div>
+    <div class="cells vertical right">
+      <div v-for="index in 19" :key="index" class="cell vertical">
+        {{20 + index}}
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="cells">
+    <div v-for="index in 21" :key="index" class="cell">
+      {{61 - index}}
+    </div>
+  </div>
+</div>
